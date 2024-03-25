@@ -1,7 +1,6 @@
 //Task:- 1 and Task:- 2
-// Anonymous and IIFE function 
 
-//1.a
+//1.a Print odd numbers
 //Anonymos
 let res1 = [];
 let oddNumbers = function(arr){
@@ -67,7 +66,7 @@ let result2 = (function(arr){
 
 console.log(result2);
 
-//2.b
+//2.b Strings to title caps
 //Arrow
 let results2 = [];
 let uppercase1 = (arr) => {
@@ -81,7 +80,7 @@ let uppercase1 = (arr) => {
 
 console.log(uppercase1(['apple','dheena','yalan']));
 
-//1.c
+//1.c Sum of all numbers in array
 //Anonymos
 let res3 = 0;
 let addNumber = function (arr){
@@ -117,7 +116,7 @@ let addNumber1 = (arr) => {
 console.log(addNumber1([1,2,3,4,5,6,7,8,9,10]));
 
 //1.d
-// Common function so all methods can asscess
+// Common function to find all prime numbers, so all methods can asscess
 function isPrimeFunction (number) {
     if (number <= 1) {
       return false;
@@ -177,7 +176,7 @@ let isPrimes = (arr) => {
 console.log(isPrimes([21,22,23,24,25,26,27,28,29,30]));
 
 
-// 1.e common function
+// 1.e common function to palindromes
 function isPalindrome (num) {
     let isPalindrome = []
     for(let o in num){
@@ -249,11 +248,9 @@ let result6 = (function (arr, arr1){
 
 console.log(result6);
 
-// 1.g 
+// 1.g Remove duplicates from an array
 
 let s = [1,2,3,2,5,6,3];
-
-
 // Anonymous 
  let res7 = function (arr){
     return arr.filter((item, index)=> arr.indexOf(item) === index)
@@ -267,7 +264,7 @@ let result7 = (function(arr){
 
 console.log(result7);
 
-// 1.h
+// 1.h Rotate an array by k times
 //Anonymous
 let res8 = function(arr, k) {
     let array = arr;
