@@ -1,4 +1,4 @@
-//Task:- 1
+//Task:- 1 and Task:- 2
 // Anonymous and IIFE function 
 
 //1.a
@@ -41,7 +41,6 @@ let oddNumbers1 = (arr) => {
 console.log(oddNumbers1([1,2,3,4,5,6,7,8,9,10]));
 
 //1.b
-
 //Anonymos
 let res2 = [];
 let uppercase = function(arr){
@@ -83,7 +82,6 @@ let uppercase1 = (arr) => {
 console.log(uppercase1(['apple','dheena','yalan']));
 
 //1.c
-
 //Anonymos
 let res3 = 0;
 let addNumber = function (arr){
@@ -108,7 +106,6 @@ console.log(result3);
 
 //2.c
 //Arrow
-
 let results3 = 0;
 let addNumber1 = (arr) => {
     for(let i in arr){
@@ -121,7 +118,6 @@ console.log(addNumber1([1,2,3,4,5,6,7,8,9,10]));
 
 //1.d
 // Common function so all methods can asscess
-
 function isPrimeFunction (number) {
     if (number <= 1) {
       return false;
@@ -152,7 +148,6 @@ let isPrime = function (arr){
 console.log(isPrime([11,12,13,14,15,16,17,18,19,20]));
 
 // IITE 
-
 let result4 = (function(arr){
     let resposd4 = [];
     for(let i in arr){
@@ -166,8 +161,8 @@ let result4 = (function(arr){
 
 console.log(result4);
 
-//2.d Arrow 
 
+//2.d Arrow 
 let results4 = [];
 let isPrimes = (arr) => {
     for(let i in arr){
@@ -181,8 +176,8 @@ let isPrimes = (arr) => {
 
 console.log(isPrimes([21,22,23,24,25,26,27,28,29,30]));
 
-// 1.e common function
 
+// 1.e common function
 function isPalindrome (num) {
     let isPalindrome = []
     for(let o in num){
@@ -206,7 +201,7 @@ function isPalindrome (num) {
     
 }
 
-// annoymous  
+// Anonymous
 let res5 = function (arr) {
     return isPalindrome(arr);
 }
@@ -229,7 +224,6 @@ console.log(results5([1204, 98089]));
 
 
 // 1.f Common function to find median
-
 function twoArrayMedien(arr,arr1){
     let cArr = arr.concat(arr1)
     cArr.sort((a, b) => a - b);
@@ -258,6 +252,8 @@ console.log(result6);
 // 1.g 
 
 let s = [1,2,3,2,5,6,3];
+
+
 // Anonymous 
  let res7 = function (arr){
     return arr.filter((item, index)=> arr.indexOf(item) === index)
@@ -272,7 +268,7 @@ let result7 = (function(arr){
 console.log(result7);
 
 // 1.h
-//
+//Anonymous
 let res8 = function(arr, k) {
     let array = arr;
     for(let i = 0; i<k; i++){
@@ -283,6 +279,7 @@ let res8 = function(arr, k) {
 }
 
 console.log(res8([1,2,3,4,5], 3));
+
 
 //IITF
 let result8 = (function(arr,k){
