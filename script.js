@@ -1,6 +1,6 @@
 //Task:- 1 and Task:- 2
 
-//1.a Print odd numbers
+//1.a Print odd
 //Anonymos
 let res1 = [];
 let oddNumbers = function(arr){
@@ -14,17 +14,15 @@ let oddNumbers = function(arr){
 console.log(oddNumbers([1,2,3,4,5,6,7,8,9,10]));
 
 //IIFE
-var result1 = (function (arr){
+(function (arr){
     var resposd1 = []
     for(let i = 0; i<arr.length; i++){
         if(arr[i]%2!=0){
             resposd1.push(arr[i])
         }
     }
-    return resposd1
+    return console.log(resposd1);
 })([1,2,3,4,5,6,7,8,9,10]);
-
-console.log(result1);
 
 //2.a
 //Arrow 
@@ -54,17 +52,17 @@ let uppercase = function(arr){
 console.log( uppercase(['apple','dheena','yalan']));
 
 //IIFE
-let result2 = (function(arr){
+(function(arr){
     let resposd2 = []
     for(let i in arr){
         let upper = arr[i][0].toUpperCase();
         let newString = arr[i].replace(arr[i][0], upper);
         resposd2.push(newString);
      }
-     return resposd2;
+     return console.log(resposd2);
 })(['apple','dheena','yalan']);
 
-console.log(result2);
+
 
 //2.b Strings to title caps
 //Arrow
@@ -93,15 +91,14 @@ let addNumber = function (arr){
 console.log(addNumber([1,2,3,4,5,6,7,8,9,10]));
 
 //IIFE
-let result3 = (function(arr){
+(function(arr){
     let resposd3 = 0;
     for(let i in arr){
         resposd3 = resposd3 + arr[i];
     }
-    return resposd3;
+    return console.log(resposd3) ;
 })([1,2,3,4,5,6,7,8,9,10]);
 
-console.log(result3);
 
 //2.c
 //Arrow
@@ -147,7 +144,7 @@ let isPrime = function (arr){
 console.log(isPrime([11,12,13,14,15,16,17,18,19,20]));
 
 // IITE 
-let result4 = (function(arr){
+(function(arr){
     let resposd4 = [];
     for(let i in arr){
         let a = isPrimeFunction (arr[i]);
@@ -155,10 +152,10 @@ let result4 = (function(arr){
             resposd4.push(arr[i]);
         }
     }
-    return resposd4;
+    return console.log(resposd4);
 })([1,2,3,4,5,6,7,8,9,10]);
 
-console.log(result4);
+ 
 
 
 //2.d Arrow 
@@ -242,11 +239,11 @@ let res6 = function (arr, arr1) {
 console.log(res6([1,3,4,2,5],[9,6,7,8,10]));
 
 //IITF 
-let result6 = (function (arr, arr1){
-    return twoArrayMedien(arr, arr1)
+(function (arr, arr1){
+    return console.log(twoArrayMedien(arr, arr1)); 
 })([11,13,14,12,15],[19,16,17,18,20]);
 
-console.log(result6);
+
 
 // 1.g Remove duplicates from an array
 
@@ -258,11 +255,10 @@ let s = [1,2,3,2,5,6,3];
 console.log(res7(s));
 
 //IITF 
-let result7 = (function(arr){
-    return arr.filter((item, index)=> arr.indexOf(item) === index)
+(function(arr){
+    return console.log(arr.filter((item, index)=> arr.indexOf(item) === index)); 
 })(s);
 
-console.log(result7);
 
 // 1.h Rotate an array by k times
 //Anonymous
@@ -279,13 +275,12 @@ console.log(res8([1,2,3,4,5], 3));
 
 
 //IITF
-let result8 = (function(arr,k){
+(function(arr,k){
     let array = arr;
     for(let i = 0; i<k; i++){
         let popn = array.pop()
         array.splice(i,0,popn)
     }
-    return array;
+    return console.log(array);;
 })([1,2,3,4,5], 1);
 
-console.log(result8);
